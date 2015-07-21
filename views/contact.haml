@@ -1,0 +1,18 @@
+%form{ :action => "", :method => "post"}
+  %fieldset
+    %ol
+      %h7
+        %label{:for => "apple"} *required
+      %h2
+        %label{:for => "name"} First, what is your name?
+        %input{:type => "text", :name => "name", :class => "text", :required => true, :placeholder => "Jane Smith"}
+      %h2
+        %label{:for => "mail"} What is your email?
+        %input{:type => "text", :name => "mail", :class => "text", :required => true, :placeholder => "janesmith@email.com"}
+      %h4
+        %label{:for => "phone"} What is your phone number?
+        %input{:type => "text", :name => "mail", :class => "text", :required => true, :placeholder => "(xxx)-xxx-xxxx)"}
+      %h4
+        %label{:for => "body"} Finally, is there anything you'd like to speak about specifically in the consulation? (optional)
+        %textarea{:name => "body", :placeholder => "Leave your message here"}
+    %input{:type => "submit", :value => "Send", :class => "button"}

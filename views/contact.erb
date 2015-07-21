@@ -1,0 +1,38 @@
+<head>
+  <meta charset="utf8">
+  <title><%= @title + ' | required*' %></title>
+  <link href="/reset.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
+</head>
+
+<div>
+    <form class="form-horizontal" action="/contact" method="post">
+    <div class="control-group">
+    <label class="control-label" for="name">First, What is your name?</label>
+    <div class="controls">
+    <input type="text" id="name" name="name" placeholder="Name" required="required" />
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label" for="email">What is your email address?</label>
+    <div class="controls">
+    <input type="email" id="email" name="email" placeholder="Email@domain.com" required="required" />
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label" for="phone">What is your phone number?</label>
+    <div class="controls">
+    <input type="text" id="phone" name="phone" placeholder="(123)-456-7890" required="required" />
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label" for="message">Finally, is there anything you'd like to speak about specifically in the consultation? (Optional)</label>
+    <div class="controls">
+    <textarea rows="6" id="message" name="message" required="required"></textarea>
+    </div>
+    </div>
+    <div class="form-actions">
+    <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+    </form>
+</div>
