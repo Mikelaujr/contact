@@ -9,8 +9,7 @@ end
 post '/contact/?' do
   options = {
   :to => 'to@gmail.com',
-  :from =>  params[:email],
-  :subject => params[:name] + " has contacted you about a consulatation",
+  :subject => params[:name] + " has contacted you about a consultation",
   :body => "hi my name is " + params[:name] + "," + "\n\n my phone number is " + params[:phone] + "\n\n my email is " + params[:email] + "," + "\n\n i want to talk about " + params[:message],
   :via => :smtp,
   :via_options => {
