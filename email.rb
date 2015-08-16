@@ -17,8 +17,8 @@ post '/contact/?' do
     :address => 'smtp.live.com',
     :port => '587',
     :domain => 'localhost.localdomain',
-    :user_name => 'michaelau_1@hotmail.com',
-    :password => '473503a',
+    :user_name => ENV['EMAIL_APP_FROM'],
+    :password => ENV['EMAIL_APP_FROM_PASSWORD'],
     :authentication => :plain,
     :enable_starttls_auto => true
     }
