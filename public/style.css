@@ -24,6 +24,11 @@ header h2 {
     color: #999;
 }
 
+label {
+    font-family: 'Open Sans';
+    font-size: 20px;
+}
+
 #main {
     margin: 0 0 20px;
 }
