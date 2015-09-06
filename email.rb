@@ -27,3 +27,7 @@ post '/contact/?' do
   Pony.mail(options)
   redirect '/contact'
 end
+
+configure do
+    set :protection, except: [:frame_options]
+end
