@@ -5,6 +5,7 @@
   <link href="/style.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,700' rel='stylesheet' type='text/css'>
 
+
 </head>
 
 <div>
@@ -15,27 +16,30 @@
     <input type="text" id="name" name="name" placeholder="First Last" required="required" />
     </div>
     </div>
+    <br>
     <div class="control-group">
     <label class="control-label" for="email">What is your email address?</label>
     <div class="controls">
     <input type="email" id="email" name="email" placeholder="Email@domain.com" required="required" />
     </div>
     </div>
+    <br>
     <div class="control-group">
     <label class="control-label" for="phone">What is your phone number?</label>
     <div class="controls">
     <input type="text" id="phone" name="phone" placeholder="(123)-456-7890" required="required" />
     </div>
     </div>
+    <br>
     <div class="control-group">
-    <label class="control-label" for="message">Finally, is there anything you'd like to speak about specifically in the consultation? (Optional)</label>
+    <label class="control-label last" for="message">Finally, is there anything you'd like to speak about specifically in the consultation? (Optional)</label>
     <div class="controls">
     <textarea rows="12" cols="40" id="message" name="message" required="required"></textarea>
     </div>
     </div>
 
     <div class="form-actions">
-    <button type="submit" class="btn btn-primary">Submit Consultation Request</button>
+    <button type="submit">Submit Consultation Request</button>
     </div>
     </form>
 </div>
@@ -71,6 +75,19 @@ label {
     font-family: 'Open Sans';
     font-size: 18px;
     max-width: 650px;
+    line-height: 32px;
+}
+
+label.last{
+    line-height: 25px;
+}
+
+input{
+    margin-top: 3px;
+
+}
+textarea{
+    margin-top: 12px;
 }
 
 #main {
